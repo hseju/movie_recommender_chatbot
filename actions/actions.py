@@ -39,7 +39,7 @@ class ActionHelloWorld(Action):
         for items in result:
             output = output + items + f"\n"
             
-        dispatcher.utter_message(text=str(output)+ f"\n")
+        # dispatcher.utter_message(text=str(output)+ f"\n")
       
 
         movie_carousel = {
