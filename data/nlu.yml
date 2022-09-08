@@ -1,0 +1,27 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+  
+
+- intent: movie
+  examples: |
+    - toy story
+    - Piartes
+    - king
+    - Batman
+    - This or That
+    - Riser
+    - King of Japan
+  
+- intent: response
+  examples: |
+    - yes
+    - ok thanks
+    - sure
+    - Yes
+    - its fine

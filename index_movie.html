@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>MovieRecommender</title>
+    <style>
+      .rw-conversation-container .rw-header{background-color: #221e2b;}
+      .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #e6d9f3; color:#221e2b}
+      .rw-conversation-container .rw-messages-container .rw-message .rw-response{background-color: #9c90b8;}
+      .rw-launcher{background-color: #221e2b;}
+      .rw-conversation-container .rw-messages-container{background-color: #ffffff;}
+      .rw-conversation-container .rw-sender{background-color:#ffffff;}
+      
+    </style>
+ 
+</head>
+<body style="background-color: #221e2b;">
+
+ <!--<script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+<df-messenger
+  df-cx="true"
+  location="asia-south1"
+  chat-title="Payment arrangement"
+  agent-id="4349addb-b740-46c8-825c-9b7e089b4106"
+  language-code="en"
+></df-messenger>
+
+--> 
+
+
+    <script>
+        //sessionStorage.clear();
+        !(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+              // Replace 1.x.x with the version that you want
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    
+                    //initPayload: '/utter_start',
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    // add other props here
+                    title: "Movie Recommender",
+                    inputTextFieldHint: "Type a message...",
+                    showFullScreenButton: true,
+                    showMessageDate: false
+                
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          //localStorage.clear();
+          </script>
+
+
+</body>
+</html>
